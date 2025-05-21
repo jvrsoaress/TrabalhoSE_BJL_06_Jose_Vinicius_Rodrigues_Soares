@@ -305,7 +305,6 @@ void atualizar_matriz(void) {
         for (int i = 0; i < 4; i++) {         // itera pelos 4 LEDs do cômodo
             pixels[comodos[comodo_atual][i]] = ((uint32_t)(32) << 8) | ((uint32_t)(0) << 16) | (uint32_t)(0); // define cor vermelha
         }
-        printf("Matriz: Emergência ativada, cômodo %d em vermelho\n", comodo_atual); // loga ação
     } else if (led_ligado) {                   // se LEDs ligados e sem emergência
         uint8_t r = 0, g = 0, b = 0;          // inicializa componentes RGB
         switch (cor_atual) {                   // define valores RGB com base na cor atual
